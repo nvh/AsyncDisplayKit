@@ -6,8 +6,6 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
-#if TARGET_OS_IOS
-
 #import <AsyncDisplayKit/ASImageNode.h>
 #import <AsyncDisplayKit/ASImageProtocols.h>
 #import <Photos/Photos.h>
@@ -117,14 +115,14 @@ typedef NS_ENUM(NSUInteger, ASMultiplexImageNodeErrorCode) {
  */
 @property (nullable, nonatomic, readonly) ASImageIdentifier displayedImageIdentifier;
 
-#if TARGET_OS_IOS
+
 /**
  * @abstract The image manager that this image node should use when requesting images from the Photos framework. If this is `nil` (the default), then `PHImageManager.defaultManager` is used.
  
  * @see `+[NSURL URLWithAssetLocalIdentifier:targetSize:contentMode:options:]` below.
  */
 @property (nonatomic, strong) PHImageManager *imageManager;
-#endif
+
 @end
 
 
@@ -231,7 +229,7 @@ didFinishDownloadingImageWithIdentifier:(ASImageIdentifier)imageIdentifier
  */
 - (nullable NSURL *)multiplexImageNode:(ASMultiplexImageNode *)imageNode URLForImageIdentifier:(ASImageIdentifier)imageIdentifier;
 
-#if TARGET_OS_IOS
+
 /**
  * @abstract A PHAsset for the specific asset local identifier
  * @param imageNode The sender.
@@ -243,11 +241,11 @@ didFinishDownloadingImageWithIdentifier:(ASImageIdentifier)imageIdentifier
  * @return A PHAsset corresponding to `assetLocalIdentifier`, or nil if none is available.
  */
 - (nullable PHAsset *)multiplexImageNode:(ASMultiplexImageNode *)imageNode assetForLocalIdentifier:(NSString *)assetLocalIdentifier;
-#endif
+
 @end
 
 #pragma mark - 
-#if TARGET_OS_IOS
+
 @interface NSURL (ASPhotosFrameworkURLs)
 
 /**
@@ -264,8 +262,8 @@ didFinishDownloadingImageWithIdentifier:(ASImageIdentifier)imageIdentifier
                                options:(PHImageRequestOptions *)options;
 
 @end
-#endif
+
 
 NS_ASSUME_NONNULL_END
 
-#endif
+

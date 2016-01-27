@@ -22,7 +22,6 @@
 		0515EA221A1576A100BA8B9A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051943121A1575630030A7D0 /* AssetsLibrary.framework */; };
 		0516FA3C1A15563400B4EBED /* ASAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = 0516FA3A1A15563400B4EBED /* ASAvailability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0516FA3D1A15563400B4EBED /* ASLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 0516FA3B1A15563400B4EBED /* ASLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0516FA401A1563D200B4EBED /* ASMultiplexImageNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0516FA3E1A1563D200B4EBED /* ASMultiplexImageNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0516FA411A1563D200B4EBED /* ASMultiplexImageNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0516FA3F1A1563D200B4EBED /* ASMultiplexImageNode.mm */; };
 		051943131A1575630030A7D0 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051943121A1575630030A7D0 /* AssetsLibrary.framework */; };
 		051943151A1575670030A7D0 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051943141A1575670030A7D0 /* Photos.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -380,7 +379,6 @@
 		B35062011B010EFD0018CF92 /* ASEditableTextNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0587F9BC1A7309ED00AFF0BA /* ASEditableTextNode.mm */; };
 		B35062021B010EFD0018CF92 /* ASImageNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 058D09DD195D050800B7D73C /* ASImageNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B35062031B010EFD0018CF92 /* ASImageNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 058D09DE195D050800B7D73C /* ASImageNode.mm */; };
-		B35062041B010EFD0018CF92 /* ASMultiplexImageNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0516FA3E1A1563D200B4EBED /* ASMultiplexImageNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B35062051B010EFD0018CF92 /* ASMultiplexImageNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0516FA3F1A1563D200B4EBED /* ASMultiplexImageNode.mm */; };
 		B35062061B010EFD0018CF92 /* ASNetworkImageNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 055B9FA61A1C154B00035D6D /* ASNetworkImageNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B35062071B010EFD0018CF92 /* ASNetworkImageNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 055B9FA71A1C154B00035D6D /* ASNetworkImageNode.mm */; };
@@ -456,6 +454,8 @@
 		B350625D1B0111740018CF92 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051943141A1575670030A7D0 /* Photos.framework */; };
 		B350625E1B0111780018CF92 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051943121A1575630030A7D0 /* AssetsLibrary.framework */; };
 		B350625F1B0111800018CF92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058D09AF195D04C000B7D73C /* Foundation.framework */; };
+		B37F14841C590E530008150F /* ASMultiplexImageNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0516FA3E1A1563D200B4EBED /* ASMultiplexImageNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B37F14851C590E550008150F /* ASMultiplexImageNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0516FA3E1A1563D200B4EBED /* ASMultiplexImageNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C78F7E2A1BF7808300CDEAFC /* ASTableNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F880591BEAEC7500D17647 /* ASTableNode.m */; };
 		C78F7E2B1BF7809800CDEAFC /* ASTableNode.h in Headers */ = {isa = PBXBuildFile; fileRef = B0F880581BEAEC7500D17647 /* ASTableNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC7FD9DE1BB5E962005CCB2B /* ASPhotosFrameworkImageRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7FD9DC1BB5E962005CCB2B /* ASPhotosFrameworkImageRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1322,6 +1322,7 @@
 				058D0A49195D05CB00B7D73C /* ASControlNode+Subclasses.h in Headers */,
 				058D0A47195D05CB00B7D73C /* ASControlNode.h in Headers */,
 				257754A51BEE44CD00737CA5 /* ASTextKitRenderer.h in Headers */,
+				B37F14841C590E530008150F /* ASMultiplexImageNode.h in Headers */,
 				464052201A3F83C40061C0BA /* ASDataController.h in Headers */,
 				05A6D05A19D0EB64002DD95E /* ASDealloc2MainObject.h in Headers */,
 				ACF6ED201B17843500DA7C62 /* ASDimension.h in Headers */,
@@ -1367,7 +1368,6 @@
 				257754AA1BEE44CD00737CA5 /* ASTextKitEntityAttribute.h in Headers */,
 				B13CA1001C52004900E031AB /* ASCollectionNode+Beta.h in Headers */,
 				0442850D1BAA64EC00D16268 /* ASMultidimensionalArrayUtils.h in Headers */,
-				0516FA401A1563D200B4EBED /* ASMultiplexImageNode.h in Headers */,
 				058D0A59195D05DC00B7D73C /* ASMutableAttributedStringBuilder.h in Headers */,
 				055B9FA81A1C154B00035D6D /* ASNetworkImageNode.h in Headers */,
 				ACF6ED2B1B17843500DA7C62 /* ASOverlayLayoutSpec.h in Headers */,
@@ -1481,6 +1481,7 @@
 				34EFC75D1B701BE900AD841F /* ASInternalHelpers.h in Headers */,
 				34EFC7671B701CD900AD841F /* ASLayout.h in Headers */,
 				DEC146B71C37A16A004A0EE7 /* ASCollectionInternal.h in Headers */,
+				B37F14851C590E550008150F /* ASMultiplexImageNode.h in Headers */,
 				34EFC7691B701CE100AD841F /* ASLayoutable.h in Headers */,
 				9CDC18CD1B910E12004965E2 /* ASLayoutablePrivate.h in Headers */,
 				B35062201B010EFD0018CF92 /* ASLayoutController.h in Headers */,
@@ -1492,7 +1493,6 @@
 				B350625C1B010F070018CF92 /* ASLog.h in Headers */,
 				0442850E1BAA64EC00D16268 /* ASMultidimensionalArrayUtils.h in Headers */,
 				DE8BEAC21C2DF3FC00D57C12 /* ASDelegateProxy.h in Headers */,
-				B35062041B010EFD0018CF92 /* ASMultiplexImageNode.h in Headers */,
 				DECBD6E81BE56E1900CF4905 /* ASButtonNode.h in Headers */,
 				B35062241B010EFD0018CF92 /* ASMutableAttributedStringBuilder.h in Headers */,
 				B13CA0F81C519EBA00E031AB /* ASCollectionViewLayoutFacilitatorProtocol.h in Headers */,
@@ -2065,7 +2065,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -2099,6 +2099,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
